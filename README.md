@@ -1,11 +1,9 @@
 # to run the project open your terminal and locate the project
-1. cd littlelemon/
-2. run the command (to check littlelemon & requirements.txt): ls
-3. create an eviroment venv by runing: python -m venv env_littlelemon or python3 -m venv env_littlelemon
-4. activate by runing: source env_littlelemon/bin/activate
-4. pip install -r requirements.txt
-5. Please check the settings.py > DATABASES user and password and replace them for your credentials on your local machine
-7. (where is the django project): cd littlelemon
+1. create an eviroment venv by runing: python3 -m venv env_littlelemon
+2. activate by runing: source env_littlelemon/bin/activate
+3. pip install -r requirements.txt
+4. Please check the settings.py > DATABASES user and password and replace them for your credentials on your local machine
+5. (where is the django project): cd littlelemon
 6. run the migrations: python manage.py migrate
 7. run the server: python manage.py runserver
 
