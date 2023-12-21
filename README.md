@@ -1,6 +1,6 @@
 # to run the project open your terminal and locate the project
 1. cd littlelemon/
-2. ls to check littlelemon & requirements.txt
+2. run the command (to check littlelemon & requirements.txt): ls
 3. create an eviroment venv by runing: python -m venv env_littlelemon or python3 -m venv env_littlelemon
 4. activate by runing: source env_littlelemon/bin/activate
 4. pip install -r requirements.txt
