@@ -1,7 +1,13 @@
-# activate env
-source env/bin/activate
+# to run the project
+1. cd littlelemon/
+2. ls to check littlelemon & requirements.txt
+3. create an eviroment venv by runing: python -m venv env_littlelemon
+4. activate source env_littlelemon/bin/activate
+4. pip install -r requirements.txt
+5. Please check the settings.py > DATABASES user and password and replace them for your credentials on your local machine
+6. run the migrations: python manage.py migrate
+7. run the server: python manage.py runserver
 
-### Please check the settings.py > DATABASES user and password and replace them for your credentials on your local machine
 
 ## Does the web application use Django to serve static HTML content?
 * Yes the path to test it is: /restaurant/
