@@ -5,7 +5,7 @@
 4. activate by runing: source env_littlelemon/bin/activate
 4. pip install -r requirements.txt
 5. Please check the settings.py > DATABASES user and password and replace them for your credentials on your local machine
-7. cd littlelemon
+7. (where is the django project): cd littlelemon
 6. run the migrations: python manage.py migrate
 7. run the server: python manage.py runserver
 
