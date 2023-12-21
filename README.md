@@ -17,7 +17,7 @@ source env/bin/activate
 
 ## Is the application set up with user registration and authentication?
 * yes I provide authentication for the Booking Apis not for Menu the path to get register a user is: /auth/users/
-* getting a token by POST request with username & password on the payload:
+* getting a token by POST request with username & password on the payload: /restaurant/api-token-auth/
 
 ## Does the application contain unit tests?
 * python manage.py test command to run the tests
