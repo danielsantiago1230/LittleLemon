@@ -1,7 +1,7 @@
 # activate env
 source env/bin/activate
 
-# Please check the settings.py > DATABASES user and password and replace them for your credentials n your local machine
+### Please check the settings.py > DATABASES user and password and replace them for your credentials on your local machine
 
 ## Does the web application use Django to serve static HTML content?
 * Yes the path to test it is: /restaurant/
