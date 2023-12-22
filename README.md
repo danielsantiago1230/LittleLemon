@@ -1,32 +1,43 @@
-# to run the project open your terminal and locate the project
-1. create an eviroment venv by runing: python3 -m venv env_littlelemon
-2. activate by runing: source env_littlelemon/bin/activate
-3. pip install -r requirements.txt
-4. Please check the settings.py > DATABASES user and password and replace them for your credentials on your local machine
-5. (where is the django project): cd littlelemon
-6. run the migrations: python manage.py migrate
-7. run the server: python manage.py runserver
+# LittleLemon - A Django-Driven Restaurant Application
+## Overview
+LittleLemon is a Django-based web application designed primarily to provide REST API services for restaurant operations. It facilitates the management of menus and table bookings, offering a streamlined solution for modern restaurant needs. This application demonstrates effective use of Django's capabilities in creating RESTful services, backed by a MySQL database for efficient data handling.
 
+## Features
+* Menu Management: Allows for easy listing, updating, and managing of restaurant menus.
+* Table Booking System: Integrated booking system for hassle-free table reservations.
+* User Authentication: Secure user registration and authentication for booking tables.
+* API Endpoints: RESTful API endpoints for menu and booking operations, enabling seamless integration with other systems or third-party applications.
 
-## Does the web application use Django to serve static HTML content?
-* Yes the path to test it is: /restaurant/
+## Technology Stack
+* Backend: Django, Django REST Framework
+* Database: MySQL
+* Authentication: Djoser for handling user authentication and token generation
+* Testing: Comprehensive unit tests to ensure application reliability
 
-## Has the learner committed the project to a Git repository?
-* yes the commits are on github: https://github.com/danielsantiago1230/LittleLemon.git
+## Getting Started
+### Prerequisites
+* Python
+* MySQL Server
 
-## Does the application connect the backend to a MySQL database?
-* the credentials are in settings.py > DATABASES, please replace your  'USER': 'root2', 'PASSWORD': '', to get this work on your local machine
+## Installation and Setup
+1. Clone the Repository:
+* git clone https://github.com/danielsantiago1230/LittleLemon.git
+2. Create a Virtual Environment:
+* python3 -m venv env_littlelemon or python -m venv env_littlelemon
+* source env_littlelemon/bin/activate
+3. Install Dependencies:
+* pip install -r requirements.txt
+4. Database Configuration: Update the settings.py file under the DATABASES section with your MySQL credentials.
+5. Run Migrations:
+* python manage.py migrate
+6. Run server:
+* python manage.py runserver
 
-## Are the menu and table booking APIs implemented?
-* the path Menu /restaurant/menu/ and Booking /restaurant/booking/ or tables /restaurant/booking/tables/
+## Usage
+* Menu Management: Accessible at .../restaurant/menu/.
+* Table Booking: Book tables at .../restaurant/booking/ or .../restaurant/booking/tables/.
+* User Registration and Authentication: Register at .../auth/users/ and obtain a token via a POST request with username & password to .../restaurant/api-token-auth/.
 
-## Is the application set up with user registration and authentication?
-* yes I provide authentication for the Booking Apis not for Menu the path to get register a user is: /auth/users/
-* getting a token by POST request with username & password on the payload: /restaurant/api-token-auth/
-
-## Does the application contain unit tests?
-* python manage.py test command to run the tests
-* the test folder in the project contains 2 test
-
-## Can the API be tested with the Insomnia REST client?
-* once your server is running you can test it with insonia Rest client
+## Testing
+* Run python manage.py test to execute unit tests.
+* Test API endpoints using the Insomnia REST client after starting the server.
